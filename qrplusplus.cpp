@@ -39,7 +39,7 @@ void QRplusplus::openWeb() {
 */
 void QRplusplus::openGithub() {
 	QDesktopServices::openUrl
-	(QUrl("https://github.com/coregameHD/QRplusplus", QUrl::TolerantMode));
+    (QUrl("https://github.com/medhakimbedhief/Qrcode_QT", QUrl::TolerantMode));https:// https://github.com/coregameHD/QRplusplus
 }
 
 /*
