@@ -39,7 +39,7 @@ void QRplusplus::openWeb() {
 */
 void QRplusplus::openGithub() {
 	QDesktopServices::openUrl
-    (QUrl("https://github.com/medhakimbedhief/Qrcode_QT", QUrl::TolerantMode));https:// https://github.com/coregameHD/QRplusplus
+    (QUrl("https://github.com/medhakimbedhief/Qrcode_QT", QUrl::TolerantMode));//https: https://github.com/coregameHD/QRplusplus
 }
 
 /*
@@ -140,7 +140,7 @@ void QRplusplus::generateQR() {
 	
 	// Save SVG XML into file
 	std::ofstream myfile;
-	myfile.open(dir.toStdString() + "/QRcode_output.svg");
+    myfile.open(dir.toStdString() + "/" + stringtext +".svg");
 	myfile << qr.toSvgString(QRplusplus::getBorderSize(), QRplusplus::getColor()) << std::endl;
 	myfile.close();
 
